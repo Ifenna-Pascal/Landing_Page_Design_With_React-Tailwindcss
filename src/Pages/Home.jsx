@@ -4,6 +4,8 @@ import Hero from '../Components/Hero';
 import Features from '../Components/Features';
 import Download from '../Components/Download';
 import FAQ from '../Components/FAQ';
+import Contact from '../Components/Contact';
+import Footer from '../Components/Footer';
 
 function Home() {
     return (
@@ -13,6 +15,8 @@ function Home() {
             <Features />
             <Download />
             <FAQ />
+            <Contact />
+            <Footer />
         </>
     )
 }
