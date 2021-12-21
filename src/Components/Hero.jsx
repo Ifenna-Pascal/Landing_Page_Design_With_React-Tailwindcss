@@ -22,6 +22,7 @@ function Hero() {
                      <img src={Image} className='w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full' alt="Image" />
                  </div>
              </div>
+             <div className="hidden md:block overflow-hidden bg-bookmark-purple mb-20 rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-25"></div>
          </section>
     )
 }
