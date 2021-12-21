@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Lato:ital,wght@1,300&family=Montserrat:wght@500&family=Poppins:wght@300&family=Praise&family=Roboto+Slab:wght@100;200&display=swap');
+
+@layer base {
+    .btn {
+        @apply shadow-md py-3 px-6 rounded-md transition duration-300
+    }
+    .btn-purple {
+        @apply bg-bookmark-purple text-white
+    }
+    .btn-white {
+        @apply bg-bookmark-white text-bookmark-grey
+    }
+}
