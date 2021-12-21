@@ -14,3 +14,31 @@
         @apply bg-bookmark-white text-bookmark-grey
     }
 }
+
+@layer components {
+    .reverse {
+        @apply  hidden
+        lg:block
+        overflow-hidden
+        bg-bookmark-purple
+        rounded-l-full
+        absolute
+        h-80
+        w-2/4
+        -bottom-24
+        -right-36
+    }
+
+    .no_reverse {
+        @apply  hidden
+        lg:block
+        overflow-hidden
+        bg-bookmark-purple
+        rounded-r-full
+        absolute
+        h-80
+        w-2/4
+        -bottom-24
+        -left-36
+    }
+}
