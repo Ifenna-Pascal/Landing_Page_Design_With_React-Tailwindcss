@@ -25,6 +25,7 @@ function Home() {
              in place of 'smooth' */
         });
     };
+    window.addEventListener('scroll', showScroll);
     return (
         <>
             <Nav />
@@ -34,6 +35,9 @@ function Home() {
             <FAQ />
             <Contact />
             <Footer />
+            <div onClick={()=> scrollToTop()} className={`fixed bottom-20 sm:bottom-60 p-2 sm:p-4 sm:right-8 cursor-pointer right-3 z-20 bg-bookmark-purple rounded-full flex-shrink-0 flex-col items-center ${scroll ? 'flex' : 'hidden'}`}>
+                <i class=" flex-1 text-white text-sm sm:text-2xl fas fa-arrow-up"></i>
+            </div>
         </>
     )
 }
