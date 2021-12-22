@@ -6,7 +6,7 @@ import Features_build from './Features_build';
 
 function Features() {
     return (
-       <section className='bg-bookmark-white py-20 mt-20 lg:mt-60'>
+       <section className='bg-bookmark-white py-20 mt-20 lg:mt-60' id="features">
            <div className='sm:w-3/4 lg:w-5/12 mx-auto px-2'>
                <h2 className="text-3xl text-center text-bookmark-blue">Features</h2>
                <p className="text-center text-bookmark-grey mt-4"> Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between

@@ -2,7 +2,7 @@ import React from 'react'
 
 function FAQ() {
     return (
-       <section className='bg-bookmark-white py-20'>
+       <section className='bg-bookmark-white py-20' id="faq">
            <div className="container">
             <div className='sm:w-3/4 lg:w-5/12 mx-auto px-2'>
                 <h2 className="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h2>
