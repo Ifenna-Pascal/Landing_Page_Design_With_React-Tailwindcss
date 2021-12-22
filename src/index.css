@@ -41,4 +41,10 @@
         -bottom-24
         -left-36
     }
+
+    .scroll_nav {
+        @apply bg-bookmark-blue
+        bg-opacity-90
+        text-white
+    }
 }
