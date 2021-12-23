@@ -17,7 +17,7 @@ function Nav() {
     return (
         <nav className={`font-Poppins container flex items-start py-4 mt-4 px-7 sm:mt-12 sticky top-0 z-20 ${scrollNav && 'scroll_nav'}`}>
             <div className='py-1 flex-shrink-0 cursor-pointer' onClick={()=> scroll.scrollToTop()}><img src={img} alt="Company Logo" className='bg-cover'/></div>
-            <ul className={`hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm ${scrollNav ? 'text-white' : 'text-bookmark-blue'}`}>
+            <ul className={`hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-sm  text-bookmark-blue`}>
                 <Link to="features" smooth={true} duration={500} className='cursor-pointer tracking-wider' activeClass='text-bookmark-red font-bold' offset={-84} spy={true} exact="true"> Features </Link>
                 <Link to="pricing" smooth={true} duration={500} className='cursor-pointer tracking-wider' activeClass='text-bookmark-red font-bold'  offset={-84} spy={true} exact="true"> Pricing</Link>
                 <Link to="faq" smooth={true} duration={500} className='cursor-pointer tracking-wider' activeClass='text-bookmark-red font-bold'  offset={-84} spy={true} exact="true"> FAQ </Link>

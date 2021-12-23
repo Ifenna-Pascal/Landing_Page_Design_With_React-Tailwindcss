@@ -43,8 +43,7 @@
     }
 
     .scroll_nav {
-        @apply bg-bookmark-blue
-        bg-opacity-90
-        text-white
+        @apply shadow-md
+        bg-white
     }
 }
