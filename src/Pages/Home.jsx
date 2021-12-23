@@ -6,9 +6,11 @@ import Download from '../Components/Download';
 import FAQ from '../Components/FAQ';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
+import Sidebar from '../Components/Sidebasr';
 
 function Home() {
     const [scroll, setScroll] = useState(false);
+    const [open, setOpen] = useState(false);
     const showScroll = () => {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 300) {
@@ -25,10 +27,15 @@ function Home() {
              in place of 'smooth' */
         });
     };
+
+    const toggle = ()=> {
+        setOpen(!open)
+    }
     window.addEventListener('scroll', showScroll);
     return (
         <>
-            <Nav />
+            <Nav toggle={toggle} open={open} />
+            <Sidebar  toggle={toggle} open={open}/>
             <Hero />
             <Features />
             <Download />
